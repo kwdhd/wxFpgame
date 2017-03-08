@@ -1,0 +1,53 @@
+.score {
+    display: flex;
+    font-size: 1vh;
+}
+
+.scoredetail{
+    flex: 1;
+    height: 150rpx;
+    background:rgba(185, 65, 189, 0.8);
+    /*opacity: 0.6; */
+    margin: 50rpx 20rpx 40rpx 20rpx;
+    text-align: center;
+    border-radius: 11rpx;
+}
+
+.scoredetail:last-child{
+    margin-right: 40rpx;
+}
+
+.scoredesc{
+    font-size: 0.9rem;
+    line-height: 50rpx;
+    margin-top: 10rpx;
+    color:yellow;
+}
+.scorenumber{
+    line-height: 60rpx;
+     font-size: 1.1rem;
+     margin-top: 5rpx;
+     color:yellow;
+}
+
+.board{
+    margin-left: 5rpx;
+    margin-bottom: 5rpx;
+}
+.rows{
+    margin-bottom:1rpx ;
+    padding:0rpx;
+    text-algin:center;
+    flex-direction:row;
+    display:flex;
+}
+.cols{
+    margin: 5rpx;
+}
+.card{
+     width:  175rpx;
+     height: 237rpx;
+     padding:1rpx;
+     magrin: 2rpx;
+}
+page{background: url('../images/gamebg.jpg') center top; }

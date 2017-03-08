@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view  class="userinfo">
+  <text class="userinfo-nickname"></text>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-nickname">{{welcome}}</text>
+  </view>
+  <view class="usermotto"  >
+    <text class="user-motto" bindtap="startGame">{{motto}}</text>
+  </view>
+  <view style="margin-top:30rpx; ">
+    <text class="user-motto"  bindtap="viewScore" >查看排名</text>
+  </view>
+</view>

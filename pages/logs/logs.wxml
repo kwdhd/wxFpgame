@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container log-list">
+ <text class="log-item">    用时  点击</text>
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log.time}}秒 {{log.click}}次</text>
+  </block>
+</view>

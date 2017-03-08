@@ -1,0 +1,26 @@
+<view class="score">
+        <view class="scoredetail">
+        <view class="scoredesc">时间</view>
+        <view class="scorenumber">{{useTime}}</view>
+    </view>
+    <view class="scoredetail">
+        <view class="scoredesc">点击次数</view>
+        <view class="scorenumber">{{clickNum}}</view>
+    </view>
+   </view>
+<view class="">
+  <view class="board" >
+    <view class="rows" wx:for="{{cards}}" wx:for-index="idx" wx:for-item="row">
+        <view wx:for="{{row}}" class="cols"   wx:for-index="idy"  wx:for-item="card" > 
+            <view  class="" data-ix="{{idx}}"  data-iy="{{idy}}"  bindtap="onTap" >
+                <image class="card" style="display:{{card.state == 0 ? 'none' : 'block'}}" mode="scaleToFill" src= "{{card.src}}" data-card="{{card}}"></image>
+                <image class="card back" style="display:{{card.state != 0 ? 'none' : 'block'}}" mode="scaleToFill" src= "{{backImage}}" ></image>
+            </view>
+        </view>
+    </view>
+    </view>
+</view>
+
+<modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalComfirm" bindcancel="modalCancle" cancelText="查看排名">
+  <view> 游戏结束 ，重新开始吗？ </view>
+</modal>

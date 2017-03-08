@@ -1,0 +1,11 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  margin:20rpx;
+}
+.log-item {
+  margin: 10rpx;
+  color:beige;
+}
+page{background: url('../images/gamebg.jpg') center top; }
